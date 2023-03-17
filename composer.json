@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^8.0",
+        "php": "^8.2",
         "psr/log": "^1.1",
         "php-etl/bucket": "^0.2.0",
         "php-etl/bucket-contracts": "^0.1.0",
@@ -27,7 +27,8 @@
         "johnkary/phpunit-speedtrap": "*",
         "mybuilder/phpunit-accelerator": "*",
         "phpunit/php-invoker": "*",
-        "php-etl/phpunit-extension": "0.4.x-dev"
+        "php-etl/phpunit-extension": "0.4.x-dev",
+        "rector/rector": "^0.15.0"
     },
     "provide": {
         "php-etl/pipeline-implementation": "0.3.0"
