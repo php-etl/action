@@ -32,7 +32,7 @@ class Action implements ExecutingActionInterface, RunnableInterface
             $this->logger->critical(
                 $exception->getMessage(),
                 [
-                    'previous' => $exception->getPrevious()
+                    'previous' => $exception->getPrevious(),
                 ]
             );
         }
