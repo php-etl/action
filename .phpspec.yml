@@ -1,5 +1,0 @@
-suites:
-  acme_suite:
-    namespace: Kiboko\Component\Action
-    psr4_prefix: Kiboko\Component\Action
-    src_path: '%paths.config%'
