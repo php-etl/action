@@ -8,9 +8,16 @@ use Kiboko\Contract\Action\ActionInterface;
 use Kiboko\Contract\Action\ExecutingActionInterface;
 use Kiboko\Contract\Action\RunnableInterface;
 use Kiboko\Contract\Action\StateInterface;
+use Psr\Log\LoggerInterface;
+use Psr\Log\NullLogger;
 
 class Action implements ExecutingActionInterface, RunnableInterface
 {
+    public function __construct(
+        private LoggerInterface $logger = new NullLogger(),
+    ) {
+    }
+
     public function execute(ActionInterface $action, StateInterface $state): ExecutingActionInterface
     {
         $state->initialize();
@@ -18,12 +25,16 @@ class Action implements ExecutingActionInterface, RunnableInterface
         try {
             $action->execute();
 
-            $state->accept();
+            $state->success();
         } catch (\Exception $exception) {
-            $state->reject();
+            $state->failure();
 
-            // TODO : improve this error management, maybe use a logger ?
-            throw new \Exception($exception->getMessage());
+            $this->logger->critical(
+                $exception->getMessage(),
+                [
+                    'previous' => $exception->getPrevious()
+                ]
+            );
         }
 
         $state->teardown();
