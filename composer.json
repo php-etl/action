@@ -18,8 +18,6 @@
     "require": {
         "php": "^8.2",
         "psr/log": "^1.1",
-        "php-etl/bucket": "^0.2.0",
-        "php-etl/bucket-contracts": "^0.1.0",
         "php-etl/action-contracts": "^0.1.0"
     },
     "require-dev": {
