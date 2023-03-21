@@ -14,7 +14,7 @@ use Psr\Log\NullLogger;
 class Action implements ExecutingActionInterface, RunnableInterface
 {
     public function __construct(
-        private LoggerInterface $logger = new NullLogger(),
+        private readonly LoggerInterface $logger = new NullLogger(),
     ) {
     }
 
