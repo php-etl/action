@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f53212b14af08cd9d4e084748bfa972",
+    "content-hash": "34115100e1ebb106d22c2b83be915644",
     "packages": [
         {
             "name": "php-etl/action-contracts",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-etl/action-contracts.git",
-                "reference": "0d4ccbb5da2b8685a0a45013efb123c4e9829fa6"
+                "reference": "4d880a544217a47de36222c383d6200fa9770d99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-etl/action-contracts/zipball/0d4ccbb5da2b8685a0a45013efb123c4e9829fa6",
-                "reference": "0d4ccbb5da2b8685a0a45013efb123c4e9829fa6",
+                "url": "https://api.github.com/repos/php-etl/action-contracts/zipball/4d880a544217a47de36222c383d6200fa9770d99",
+                "reference": "4d880a544217a47de36222c383d6200fa9770d99",
                 "shasum": ""
             },
             "require": {
@@ -58,65 +58,7 @@
                 "issues": "https://github.com/php-etl/action-contracts/issues",
                 "source": "https://github.com/php-etl/action-contracts/tree/main"
             },
-            "time": "2023-03-17T15:49:43+00:00"
-        },
-        {
-            "name": "php-etl/bucket",
-            "version": "v0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-etl/bucket.git",
-                "reference": "a5a20ac8a33d9460f30b57ff92761031bc66a062"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-etl/bucket/zipball/a5a20ac8a33d9460f30b57ff92761031bc66a062",
-                "reference": "a5a20ac8a33d9460f30b57ff92761031bc66a062",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.0",
-                "php-etl/bucket-contracts": "^0.1.0"
-            },
-            "require-dev": {
-                "friends-of-phpspec/phpspec-code-coverage": "6.x-dev",
-                "johnkary/phpunit-speedtrap": "*",
-                "mybuilder/phpunit-accelerator": "*",
-                "phpspec/phpspec": "^7.0",
-                "phpunit/php-invoker": "*",
-                "phpunit/phpunit": "^9.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Kiboko\\Component\\Bucket\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kiboko SAS",
-                    "homepage": "http://kiboko.fr"
-                },
-                {
-                    "name": "Grégory Planchat",
-                    "email": "gregory@kiboko.fr"
-                }
-            ],
-            "description": "This library implements the Extract-Transform-Load pattern asynchronously in PHP with the help of iterators and generators",
-            "support": {
-                "issues": "https://github.com/php-etl/bucket/issues",
-                "source": "https://github.com/php-etl/bucket/tree/v0.2.0"
-            },
-            "time": "2021-09-29T07:03:50+00:00"
+            "time": "2023-03-21T15:15:18+00:00"
         },
         {
             "name": "php-etl/bucket-contracts",

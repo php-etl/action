@@ -6,7 +6,7 @@ on: pull_request
 jobs:
   rector:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.head.repo.full_name == 'php-etl/action-contracts'
+    if: github.event.pull_request.head.repo.full_name == 'php-etl/action'
     steps:
       -
         if: github.event.pull_request.head.repo.full_name == github.repository
@@ -18,7 +18,7 @@ jobs:
       -
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.2
+          php-version: '8.2'
           coverage: none
 
       -   uses: "ramsey/composer-install@v2"
