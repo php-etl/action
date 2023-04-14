@@ -6,8 +6,8 @@ namespace Kiboko\Component\Action;
 
 use Kiboko\Contract\Action\ActionInterface;
 use Kiboko\Contract\Action\ExecutingActionInterface;
-use Kiboko\Contract\Action\RunnableInterface;
 use Kiboko\Contract\Action\StateInterface;
+use Kiboko\Contract\Job\RunnableInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
