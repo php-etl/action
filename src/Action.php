@@ -7,14 +7,14 @@ namespace Kiboko\Component\Action;
 use Kiboko\Contract\Action\ActionInterface;
 use Kiboko\Contract\Action\ExecutingActionInterface;
 use Kiboko\Contract\Action\StateInterface;
-use Kiboko\Contract\Job\RunnableInterface;
+use Kiboko\Contract\Satellite\RunnableInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
-class Action implements ExecutingActionInterface, RunnableInterface
+readonly class Action implements ExecutingActionInterface, RunnableInterface
 {
     public function __construct(
-        private readonly LoggerInterface $logger = new NullLogger(),
+        private LoggerInterface $logger = new NullLogger(),
     ) {
     }
 
@@ -42,7 +42,7 @@ class Action implements ExecutingActionInterface, RunnableInterface
         return $this;
     }
 
-    public function run(): int
+    public function run(int $interval = 1000): int
     {
         return 1;
     }
