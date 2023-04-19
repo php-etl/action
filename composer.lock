@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-etl/action-contracts.git",
-                "reference": "63c12030c0bf3cbbe918a0b0c0793e1565b7bf15"
+                "reference": "42b3f800ab4898e06249b73afad852160d225884"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-etl/action-contracts/zipball/63c12030c0bf3cbbe918a0b0c0793e1565b7bf15",
-                "reference": "63c12030c0bf3cbbe918a0b0c0793e1565b7bf15",
+                "url": "https://api.github.com/repos/php-etl/action-contracts/zipball/42b3f800ab4898e06249b73afad852160d225884",
+                "reference": "42b3f800ab4898e06249b73afad852160d225884",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "issues": "https://github.com/php-etl/action-contracts/issues",
                 "source": "https://github.com/php-etl/action-contracts/tree/v0.1.0"
             },
-            "time": "2023-04-14T09:58:24+00:00"
+            "time": "2023-04-18T15:03:09+00:00"
         },
         {
             "name": "php-etl/bucket-contracts",
