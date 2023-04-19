@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7449bf0fe0f2ab2610cf67b6a489706",
+    "content-hash": "da2db606018dbbd04c7cafd36f4b9096",
     "packages": [
         {
             "name": "php-etl/action-contracts",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-etl/action-contracts.git",
-                "reference": "63c12030c0bf3cbbe918a0b0c0793e1565b7bf15"
+                "reference": "42b3f800ab4898e06249b73afad852160d225884"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-etl/action-contracts/zipball/63c12030c0bf3cbbe918a0b0c0793e1565b7bf15",
-                "reference": "63c12030c0bf3cbbe918a0b0c0793e1565b7bf15",
+                "url": "https://api.github.com/repos/php-etl/action-contracts/zipball/42b3f800ab4898e06249b73afad852160d225884",
+                "reference": "42b3f800ab4898e06249b73afad852160d225884",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "issues": "https://github.com/php-etl/action-contracts/issues",
                 "source": "https://github.com/php-etl/action-contracts/tree/v0.1.0"
             },
-            "time": "2023-04-14T09:58:24+00:00"
+            "time": "2023-04-18T15:03:09+00:00"
         },
         {
             "name": "php-etl/bucket-contracts",
@@ -112,6 +112,58 @@
                 "source": "https://github.com/php-etl/bucket-contracts/tree/v0.2.0"
             },
             "time": "2023-04-03T12:42:10+00:00"
+        },
+        {
+            "name": "php-etl/satellite-contracts",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-etl/satellite-contracts.git",
+                "reference": "1d2bc6822bfdb3efc6a1f490e706db995c99ef41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-etl/satellite-contracts/zipball/1d2bc6822bfdb3efc6a1f490e706db995c99ef41",
+                "reference": "1d2bc6822bfdb3efc6a1f490e706db995c99ef41",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "rector/rector": "^0.15.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kiboko\\Contract\\Satellite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kiboko SAS",
+                    "homepage": "http://kiboko.fr"
+                },
+                {
+                    "name": "Grégory Planchat",
+                    "email": "gregory@kiboko.fr"
+                }
+            ],
+            "description": "This library describes contracts for defining satellite formats",
+            "support": {
+                "issues": "https://github.com/php-etl/satellite-contracts/issues",
+                "source": "https://github.com/php-etl/satellite-contracts/tree/v0.1.0"
+            },
+            "time": "2023-04-18T13:53:22+00:00"
         },
         {
             "name": "psr/log",
