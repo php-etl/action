@@ -37,7 +37,7 @@ readonly class Action implements ExecutingActionInterface, RunnableInterface
             );
         }
 
-        $state->teardown();
+        $state->success();
 
         return $this;
     }
